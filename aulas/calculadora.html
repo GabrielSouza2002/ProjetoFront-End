@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //calculadora
+
+        var numero1 = prompt("Informe o primeiro número: ");
+        var sinal = prompt("Informe o sinal da sua operação: ");
+
+        while(sinal != "-" && sinal != "+" && sinal != "/" && sinal != "*"){
+            alert("operação indisponível, por gentileza digite somente +, -, / e * ");
+
+            sinal = prompt("Informe o sinal da sua operação: ");
+        }
+
+
+        var numeroFinal = prompt("informe o numero final...")
+
+        //convertendo para número uma string
+        numero1 = parseInt(numero1);
+        numeroFinal = parseInt(numeroFinal);
+        
+
+        var resultadoFinal = 0;
+
+
+        if(sinal == '+'){
+            resultadoFinal = numero1 + numeroFinal;
+        }else if(sinal == '-'){
+            resultadoFinal = numero1 - numeroFinal;
+        }else if(sinal == '*'){
+            resultadoFinal = numero1 * numeroFinal;
+        }else if(sinal == '/'){
+            resultadoFinal = numero1 / numeroFinal;
+        }
+
+
+        alert("o resultado final é: " + resultadoFinal);
+
+        
+
+
+    </script>
+</body>
+</html>
